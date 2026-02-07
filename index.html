@@ -1,100 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard - Supermarket</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Inventory</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
-    <header class="topbar">
-      <div class="topbar-inner">
-        <div class="brand">
-          <div class="brand-icon">CS</div>
-          <span>Chris Supermarket</span>
-        </div>
-        <nav class="nav-links">
-          <a href="index.html" class="active">Dashboard</a>
-          <a href="inventory.html">Inventory</a>
-          <a href="form.html">Orders</a>
-          <a href="contact.html">Suppliers</a>
-        </nav>
-        <div class="search-actions">
-          <label class="search">
-            <span>🔍</span>
-            <input type="text" placeholder="Search updates..." />
-          </label>
-          <button class="button">+ Add Product</button>
-          <button class="button secondary">⬆ Export</button>
-        </div>
-      </div>
+    <header>
+        <h1>Restaurant Inventory Management</h1>
     </header>
-
-    <main class="main">
-      <section class="section-header">
-        <div class="section-title">
-          <h1>Operations Overview</h1>
-          <p>Track daily performance across stores and warehouses.</p>
-        </div>
-        <div class="badges">
-          <div class="badge">⚠️ 4 Urgent Reorders</div>
-          <div class="badge danger">⛔ 2 Supply Delays</div>
-        </div>
-      </section>
-
-      <section class="hero">
-        <div>
-          <h2>Inventory Health</h2>
-          <p class="muted">92% of SKUs in healthy stock levels.</p>
-          <div style="margin-top: 16px; font-size: 2rem; font-weight: 700; color: var(--accent-dark);">92%</div>
-        </div>
-        <div>
-          <h2>Fulfillment Speed</h2>
-          <p class="muted">Average pick &amp; pack time this week.</p>
-          <div style="margin-top: 16px; font-size: 2rem; font-weight: 700; color: var(--accent-dark);">18 min</div>
-        </div>
-        <div>
-          <h2>Warehouse Utilization</h2>
-          <p class="muted">Capacity used across regional hubs.</p>
-          <div style="margin-top: 16px; font-size: 2rem; font-weight: 700; color: var(--accent-dark);">76%</div>
-        </div>
-      </section>
-
-      <section class="card" style="margin-bottom: 24px;">
-        <h2>Today’s Priorities</h2>
-        <p style="color: var(--muted); margin-top: 8px;">Coordinate cross-dock transfers and resolve urgent replenishment requests.</p>
-        <div class="form-grid" style="margin-top: 20px;">
-          <div class="contact-card">
-            <strong>North Hub</strong>
-            <p style="color: var(--muted);">Replenish dairy and produce fast movers.</p>
-          </div>
-          <div class="contact-card">
-            <strong>Central Hub</strong>
-            <p style="color: var(--muted);">Audit freezer capacity and update labels.</p>
-          </div>
-          <div class="contact-card">
-            <strong>East Hub</strong>
-            <p style="color: var(--muted);">Prepare weekend promotional bundles.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>Live Notifications</h2>
-        <ul style="margin-top: 16px; padding-left: 18px; color: var(--muted);">
-          <li>14 SKUs approaching reorder threshold.</li>
-          <li>Fresh produce delivery scheduled for 3:30 PM.</li>
-          <li>Two vendors awaiting compliance documentation.</li>
-        </ul>
-      </section>
+    <main>
+        <section id="menu-items">
+            <h2>Menu Items</h2>
+            <ul>
+                <li>Spaghetti - $12</li>
+                <li>Cheeseburger - $10</li>
+                <li>Caesar Salad - $8</li>
+                <li>Grilled Chicken - $15</li>
+            </ul>
+        </section>
+        <section id="stock-levels">
+            <h2>Stock Levels</h2>
+            <ul>
+                <li>Spaghetti: 20 available</li>
+                <li>Cheeseburgers: 35 available</li>
+                <li>Salad: 15 available</li>
+                <li>Chicken: 10 available</li>
+            </ul>
+        </section>
+        <section id="kitchen-operations">
+            <h2>Kitchen Operations</h2>
+            <p>Prepare dishes according to orders, track preparation times, and manage inventory levels.</p>
+        </section>
     </main>
-
-    <footer class="footer">
-      Supermarket Inventory Management System | 2026
+    <footer>
+        <p>&copy; 2026 Restaurant Inventory Management</p>
     </footer>
-  </div>
 </body>
 </html>
-
-
