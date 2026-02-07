@@ -1,145 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inventory - Supermarket</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
-    <header class="topbar">
-      <div class="topbar-inner">
-        <div class="brand">
-          <div class="brand-icon">CS</div>
-          <span>Chris Supermarket</span>
-        </div>
-        <nav class="nav-links">
-          <a href="index.html">Dashboard</a>
-          <a href="inventory.html" class="active">Inventory</a>
-          <a href="form.html">Orders</a>
-          <a href="contact.html">Suppliers</a>
-        </nav>
-        <div class="search-actions">
-          <label class="search">
-            <span>🔍</span>
-            <input type="text" placeholder="Search SKU or Product..." />
-          </label>
-          <button class="button">+ Add Product</button>
-          <button class="button secondary">⬆ Export</button>
-        </div>
-      </div>
+    <header>
+        <h1>Restaurant Menu Inventory</h1>
     </header>
-
-    <main class="main">
-      <section class="section-header">
-        <div class="section-title">
-          <h1>Inventory Management</h1>
-          <p>Real-time stock tracking across 4 regional warehouses.</p>
-        </div>
-        <div class="badges">
-          <div class="badge">⚠️ 12 Low Stock Items</div>
-          <div class="badge danger">⛔ 3 Out of Stock</div>
-        </div>
-      </section>
-
-      <section class="filters">
-        <span class="filter-pill">Filters</span>
-        <span class="filter-pill">Category ▾</span>
-        <span class="filter-pill">Supplier ▾</span>
-        <span class="filter-pill">Warehouse ▾</span>
-        <span class="filter-pill">Status ▾</span>
-        <span class="filter-pill">Clear All</span>
-      </section>
-
-      <section class="inventory-table">
-        <div class="table-head">
-          <div>Image</div>
-          <div>Product Info</div>
-          <div>Category</div>
-          <div>In Stock</div>
-          <div>Committed</div>
-          <div>Available</div>
-          <div>Status</div>
-          <div>Actions</div>
-        </div>
-
-        <div class="table-row">
-          <div class="product-image">OM</div>
-          <div class="product" data-label="Product Info">
-            Organic Whole Milk 1L
-            <span>SKU-DA-001</span>
-          </div>
-          <div data-label="Category"><span class="category">Dairy</span></div>
-          <div data-label="In Stock">150</div>
-          <div data-label="Committed">20</div>
-          <div data-label="Available">130</div>
-          <div data-label="Status"><span class="status">● In Stock</span></div>
-          <div data-label="Actions">⋯</div>
-        </div>
-
-        <div class="table-row">
-          <div class="product-image" style="background: linear-gradient(135deg, #f97316, #fdba74);">GA</div>
-          <div class="product" data-label="Product Info">
-            Granny Smith Apples
-            <span>SKU-PR-042</span>
-          </div>
-          <div data-label="Category"><span class="category orange">Produce</span></div>
-          <div data-label="In Stock">45</div>
-          <div data-label="Committed">10</div>
-          <div data-label="Available">35</div>
-          <div data-label="Status"><span class="status low">● Low Stock</span></div>
-          <div data-label="Actions">⋯</div>
-        </div>
-
-        <div class="table-row">
-          <div class="product-image" style="background: linear-gradient(135deg, #a855f7, #d8b4fe);">AW</div>
-          <div class="product" data-label="Product Info">
-            Artisan Whole Wheat
-            <span>SKU-BK-105</span>
-          </div>
-          <div data-label="Category"><span class="category purple">Bakery</span></div>
-          <div data-label="In Stock">0</div>
-          <div data-label="Committed">0</div>
-          <div data-label="Available">0</div>
-          <div data-label="Status"><span class="status out">● Out of Stock</span></div>
-          <div data-label="Actions">⋯</div>
-        </div>
-
-        <div class="table-row">
-          <div class="product-image" style="background: linear-gradient(135deg, #0ea5e9, #7dd3fc);">GY</div>
-          <div class="product" data-label="Product Info">
-            Plain Greek Yogurt
-            <span>SKU-DA-012</span>
-          </div>
-          <div data-label="Category"><span class="category">Dairy</span></div>
-          <div data-label="In Stock">80</div>
-          <div data-label="Committed">5</div>
-          <div data-label="Available">75</div>
-          <div data-label="Status"><span class="status">● In Stock</span></div>
-          <div data-label="Actions">⋯</div>
-        </div>
-
-        <div class="table-footer">
-          <span>Showing 1-4 of 128 products</span>
-          <div class="pagination">
-            <span class="page-dot">‹</span>
-            <span class="page-dot active">1</span>
-            <span class="page-dot">2</span>
-            <span class="page-dot">3</span>
-            <span class="page-dot">…</span>
-            <span class="page-dot">12</span>
-            <span class="page-dot">›</span>
-          </div>
-          <span>Rows per page: 25</span>
-        </div>
-      </section>
+    <main>
+        <h2>Ingredients and Stock Levels</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tomatoes</td>
+                    <td>30</td>
+                    <td>lbs</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Onions</td>
+                    <td>50</td>
+                    <td>lbs</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Garlic</td>
+                    <td>15</td>
+                    <td>lbs</td>
+                    <td>Low Stock</td>
+                </tr>
+                <tr>
+                    <td>Bell Peppers</td>
+                    <td>20</td>
+                    <td>lbs</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Olive Oil</td>
+                    <td>10</td>
+                    <td>liters</td>
+                    <td>Low Stock</td>
+                </tr>
+                <tr>
+                    <td>Chicken Breast</td>
+                    <td>25</td>
+                    <td>lbs</td>
+                    <td>In Stock</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
-
-    <footer class="footer">
-      Supermarket Inventory Management System | 2026
+    <footer>
+        <p>Copyright © 2026 Your Restaurant Name</p>
     </footer>
-  </div>
 </body>
 </html>
-
