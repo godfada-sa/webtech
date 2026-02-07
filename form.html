@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orders - Supermarket OS</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <div class="brand-icon">CS</div>
+          <span>Christian Supermarket</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="inventory.html">Inventory</a>
+          <a href="form.html" class="active">Orders</a>
+          <a href="contact.html">Suppliers</a>
+        </nav>
+        <div class="search-actions">
+          <label class="search">
+            <span>🔍</span>
+            <input type="text" placeholder="Search orders..." />
+          </label>
+          <button class="button">+ New Order</button>
+          <button class="button secondary">⬆ Export</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section-header">
+        <div class="section-title">
+          <h1>Purchase Order Form</h1>
+          <p>Submit supplier orders and coordinate delivery windows.</p>
+        </div>
+        <div class="badges">
+          <div class="badge">⚠️ 6 Pending Approvals</div>
+          <div class="badge danger">⛔ 1 Delayed Shipment</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Order Details</h2>
+        <p style="color: var(--muted); margin-top: 6px;">Fill out the form to generate a purchase order.</p>
+        <form class="form-grid" style="margin-top: 20px;">
+          <div class="form-field">
+            <label for="supplier">Supplier</label>
+            <select id="supplier" name="supplier">
+              <option>FreshFields Co.</option>
+              <option>Green Valley Dairy</option>
+              <option>Sunrise Bakery</option>
+              <option>Oceanic Foods</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="warehouse">Warehouse</label>
+            <select id="warehouse" name="warehouse">
+              <option>North Hub</option>
+              <option>Central Hub</option>
+              <option>East Hub</option>
+              <option>South Hub</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="delivery">Preferred Delivery</label>
+            <input id="delivery" type="date" name="delivery" />
+          </div>
+          <div class="form-field">
+            <label for="priority">Priority Level</label>
+            <select id="priority" name="priority">
+              <option>Standard</option>
+              <option>Priority</option>
+              <option>Urgent</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="items">Item List</label>
+            <textarea id="items" name="items" rows="5" placeholder="List SKUs and quantities..."></textarea>
+          </div>
+          <div class="form-field">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="5" placeholder="Delivery instructions or notes..."></textarea>
+          </div>
+        </form>
+        <div style="margin-top: 20px; display: flex; gap: 12px;">
+          <button class="button">Submit Order</button>
+          <button class="button secondary">Save Draft</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Supermarket Inventory Management System v2.4.0 • Last sync: 2 mins ago
+    </footer>
+  </div>
+</body>
+</html>

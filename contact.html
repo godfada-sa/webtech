@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suppliers - Supermarket OS</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <div class="brand-icon">S</div>
+          <span>Christian Supermarket</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="inventory.html">Inventory</a>
+          <a href="form.html">Orders</a>
+          <a href="contact.html" class="active">Suppliers</a>
+        </nav>
+        <div class="search-actions">
+          <label class="search">
+            <span>🔍</span>
+            <input type="text" placeholder="Search suppliers..." />
+          </label>
+          <button class="button">+ Add Supplier</button>
+          <button class="button secondary">⬆ Export</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section-header">
+        <div class="section-title">
+          <h1>Supplier Directory</h1>
+          <p>Manage vendor relationships and performance metrics.</p>
+        </div>
+        <div class="badges">
+          <div class="badge">⚠️ 3 Contracts Expiring</div>
+          <div class="badge danger">⛔ 1 Quality Alert</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Preferred Partners</h2>
+        <p style="color: var(--muted); margin-top: 6px;">Top-rated suppliers with on-time deliveries.</p>
+        <div class="contact-grid" style="margin-top: 18px;">
+          <div class="contact-card">
+            <strong>FreshFields Co.</strong>
+            <p style="color: var(--muted);">Produce • 98% on-time rate</p>
+            <p>📞 (555) 341-2098</p>
+            <p>✉️ hello@freshfields.com</p>
+          </div>
+          <div class="contact-card">
+            <strong>Green Valley Dairy</strong>
+            <p style="color: var(--muted);">Dairy • 96% on-time rate</p>
+            <p>📞 (555) 112-8054</p>
+            <p>✉️ orders@greenvalley.com</p>
+          </div>
+          <div class="contact-card">
+            <strong>Sunrise Bakery</strong>
+            <p style="color: var(--muted);">Bakery • 95% on-time rate</p>
+            <p>📞 (555) 408-7762</p>
+            <p>✉️ sales@sunrisebakery.com</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" style="margin-top: 24px;">
+        <h2>Recent Supplier Notes</h2>
+        <ul style="margin-top: 16px; padding-left: 18px; color: var(--muted);">
+          <li>Oceanic Foods updated cold chain certifications.</li>
+          <li>Harvest Gold added weekend delivery slots.</li>
+          <li>Mountain Fresh reduced lead time for leafy greens.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Supermarket Inventory Management System v2.4.0 • Last sync: 2 mins ago
+    </footer>
+  </div>
+</body>
+</html>
